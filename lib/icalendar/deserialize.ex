@@ -19,7 +19,7 @@ defimpl ICalendar.Deserialize, for: BitString do
 
   # Copy approach from Ruby library to deal with Google Calendar's wrapping
   # https://github.com/icalendar/icalendar/blob/14db8fdd36f9007fa2627b2c10a9cdf3c9f8f35a/lib/icalendar/parser.rb#L9-L22
-  # See https://github.com/lpil/icalendar/issues/53 for discussion
+  # See https://github.com/apiontek/icalendar/issues/53 for discussion
   defp adjust_wrapped_lines(body) do
     String.replace(body, ~r/\r?\n[ \t]/, "")
   end

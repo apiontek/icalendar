@@ -1,7 +1,7 @@
 defmodule ICalendar.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/lpil/icalendar"
+  @source_url "https://github.com/apiontek/icalendar"
   @version "1.1.2"
 
   def project do
